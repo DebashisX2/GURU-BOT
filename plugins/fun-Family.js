@@ -45,13 +45,13 @@ function handler(m, { groupMetadata }) {
 ভাই/বোন:- ${toM(c)}💆\n
 বর/বউ:- ${toM(a)}👫\n
 Bf/Gf:- ${toM(a)} 👩‍❤‍💋‍👨\n
-ক্রাশ :- ${toM(g)} 
+ক্রাশ :- ${toM(g)} \n
 Ex:- ${toM(d)} 🤡\n
 বাড়িওয়ালা- ${toM(e)} 🏟\n
 শশুর/শাশুরি:- ${toM(f)} 🧚\n
 Total বাচ্চা: ${percentage}\n
 ${name} এই হল তোমার আসল পরিচয় কাল সবাইকে নিয়ে নবান্ন দেখা কর।🤸‍♂`, null, {
-        mentions: [a, b, c, d, e, f, mentionedUser] // Include all variables in mentions
+        mentions: [a, b, c, d, e, f, g, mentionedUser] // Include all variables in mentions
     });
 }
 
