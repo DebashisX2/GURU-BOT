@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 import cron from 'node-cron';
 
 const weatherApiKey = '060a6bcfa19809c2cd4d97a212b19273'; // replace with your weather API key
@@ -27,8 +27,8 @@ const weatherNotifications = {
 let checkWeatherAndNotify = async (conn) => {
   try {
     // Fetch weather data
-    const response = await fetch(weatherApiUrl);
-    const data = await response.json();
+    const response = await axios.get(weatherApiUrl);
+    const data = response.data;
 
     // Get current weather condition
     const currentWeather = data.weather[0].main.toLowerCase();
@@ -68,7 +68,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
 handler.help = ['weather'];
 handler.tags = ['tools'];
-handler.command = ['SaruWeather'];
+handler.command = ['saruu'];
 handler.group = false;
 
 export default handler;
