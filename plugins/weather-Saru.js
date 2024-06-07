@@ -13,7 +13,7 @@ const locations = [
     crushWhatsAppId: '919062628928@s.whatsapp.net', // replace with your WhatsApp ID for Howrah
   },
   {
-    city: 'Madinipur',
+    city: 'Medinipur',
     crushWhatsAppId: '919339523744@s.whatsapp.net', // replace with the WhatsApp ID of your 2nd crush for Madinipur
   }
 ];
